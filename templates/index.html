@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b12'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='25' font-weight='700' fill='%23b9f36b'%3ESC%3C/text%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Portfolio of Sakshi Hanmant Chavan, Computer Science and Engineering student at TKIET.">
+  <title>Sakshi Chavan | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div class="welcome-screen" id="welcome-screen">
+  <div class="welcome-composition">
+    <svg
+      class="welcome-lines"
+      viewBox="0 0 300 220"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path class="welcome-line line-one" pathLength="1" d="M18 85 H70 L110 45 H190 L230 85 H282" />
+      <path class="welcome-line line-two" pathLength="1" d="M18 135 H70 L110 175 H190 L230 135 H282" />
+      <path class="welcome-line line-three" pathLength="1" d="M70 20 L130 80 L150 60 L170 80 L230 20" />
+      <path class="welcome-line line-four" pathLength="1" d="M70 200 L130 140 L150 160 L170 140 L230 200" />
+      <path class="welcome-line line-five" pathLength="1" d="M150 18 V70 M150 150 V202" />
+      <circle class="welcome-center" cx="150" cy="110" r="12" pathLength="1" />
+    </svg>
+
+    <p class="welcome-eyebrow">WELCOME TO</p>
+    <h2>Sakshi’s Portfolio</h2>
+    <p class="welcome-caption">Ideas taking shape</p>
+  </div>
+</div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">SC</span>
+        <span class="brand-copy">
+          <strong>Sakshi Chavan</strong>
+          <small>Computer Science Student</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#certificates">Certificates</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">☼</button>
+        <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & COLLABORATION</div>
+
+        <p class="exploring-badge">
+  <span class="exploring-dot"></span>
+  Currently exploring <strong>Full-Stack Development</strong>
+</p>
+
+        <p class="hero-greeting">Hello, I’m</p>
+        <h1>Sakshi Hanmant<br><span>Chavan.</span></h1>
+        <p class="hero-role">I’m a <span id="typed-role">Computer Science student</span><i class="typing-cursor">|</i></p>
+        <p class="hero-description">
+          A second-year Computer Science and Engineering student at
+          <strong>TKIET, Warananagar</strong>, interested in building useful web experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-secondary" href="#about">More about me</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><i></i> Maharashtra, India</span>
+          <span>Currently learning web development</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Decorative portfolio illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-card">
+          <div class="visual-card-top"><span>PORTFOLIO / 2026</span><span>•••</span></div>
+          <div class="visual-art">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+            <span class="art-monogram">SC</span>
+            <span class="art-star star-one">✳</span>
+            <span class="art-star star-two">✦</span>
+          </div>
+          <div class="visual-card-bottom">
+            <div><small>CURRENT FOCUS</small><strong>Learning by building.</strong></div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">✦ Curious mind</div>
+        <div class="floating-chip chip-bottom"><span class="status-dot"></span> Building my journey</div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="section-kicker">01 — ABOUT ME</p>
+        <h2>Curiosity first.<br><span>Code follows.</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p>
+            I’m Sakshi, a second-year Computer Science and Engineering student
+            at TKIET, Warananagar. I enjoy learning how ideas turn into useful
+            digital experiences.
+          </p>
+          <p>
+            I’m building my skills through hands-on projects and exploring
+            frontend and full-stack web development.
+          </p>
+          <a class="text-link" href="#contact">Have a project in mind? <span>↗</span></a>
+        </div>
+
+        <div class="about-details reveal">
+  <div class="detail-row">
+    <span>01</span>
+    <div>
+      <small>CURRENT DEGREE · SECOND YEAR</small>
+      <strong>Computer Science & Engineering</strong>
+      <p>Tatyasaheb Kore Institute of Engineering and Technology (TKIET), Warnanagar</p>
+    </div>
+  </div>
+
+  <div class="detail-row">
+    <span>02</span>
+    <div>
+      <small>DIPLOMA · 91.35%</small>
+      <strong>Computer Engineering</strong>
+      <p>Padmabhooshan Vasantraodada Patil Institute of Technology (PVPIT), Budhgaon, Sangli</p>
+    </div>
+  </div>
+
+  <div class="detail-row">
+    <span>03</span>
+    <div>
+      <small>SSC · 90.20%</small>
+      <strong>Secondary School</strong>
+      <p>SMT. Vatsaladevi Desai Girls High School, Atpadi</p>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">02 — WHAT I USE</p>
+          <h2>Tools I’m learning<br><span>and building with.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-icon">⌘</span>
+            <h3>Frontend</h3>
+            <p>Building the structure and look of websites.</p>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon">⟡</span>
+            <h3>Backend</h3>
+            <p>Learning how websites process and serve data.</p>
+            <div class="skill-tags"><span>Python</span><span>Flask</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon">▤</span>
+            <h3>Database & Tools</h3>
+            <p>Working with stored data and project repositories.</p>
+            <div class="skill-tags"><span>SQLite</span><span>GitHub</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+<section class="section projects-section" id="projects">
+  <div class="container">
+    <div class="projects-heading reveal">
+      <div class="section-heading">
+        <p class="section-kicker">03 — SELECTED WORK</p>
+        <h2>Things I’ve <span>built.</span></h2>
+      </div>
+      <p class="projects-intro">Explore projects from my learning journey.</p>
+    </div>
+
+    
+<div class="featured-project" id="featured-project"></div>
+    <div class="project-grid" id="project-list">
+      <p class="loading-message">Loading projects…</p>
+    </div>
+  </div>
+</section>
+<section class="section certificate-section" id="certificates">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="section-kicker">04 — LEARNING & CERTIFICATES</p>
+      <h2>Courses I’ve <span>completed.</span></h2>
+      <p class="certificate-intro">Select a certificate to open its PDF.</p>
+    </div>
+
+    <div class="certificate-grid" id="certificate-grid">
+      <p class="loading-message">Loading certificates…</p>
+    </div>
+  </div>
+</section>
+<section class="section container contact-section" id="contact">
+  <div class="contact-panel reveal">
+    <div class="contact-copy">
+      <p class="section-kicker">05 — GET IN TOUCH</p>
+
+      <div class="contact-status">
+        <span></span>
+        Open to learning & collaboration
+      </div>
+
+      <h2>Let’s make something<br><span>meaningful.</span></h2>
+
+      <p>Have a question or want to connect? Choose a way to reach me.</p>
+
+      <div class="contact-links">
+        <a class="contact-link-card" href="mailto:chavansakshi0003@gmail.com">
+          <span class="contact-link-icon">✉</span>
+          <span class="contact-link-text">
+            <small>EMAIL ME</small>
+            <strong>chavansakshi0003@gmail.com</strong>
+          </span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+
+        <a
+          class="contact-link-card"
+          href="https://github.com/sakshic03"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="contact-link-icon">GH</span>
+          <span class="contact-link-text">
+            <small>FIND ME ON</small>
+            <strong>GitHub</strong>
+          </span>
+          <span class="contact-link-arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="contact-extra">
+        <button class="copy-email" id="copy-email" type="button">
+          Copy email address
+        </button>
+        <span>Thanks for stopping by!</span>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact-form">
+      <label for="name">Your name</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      >
+
+      <label for="email">Email address</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="you@example.com"
+        required
+      >
+
+      <label for="message">Your message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="What would you like to talk about?"
+        required
+      ></textarea>
+
+      <button class="button button-primary" type="submit">
+        Send message <span>↗</span>
+      </button>
+
+      <p id="form-status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <dialog class="project-dialog" id="project-dialog">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Close">×</button>
+    <p class="section-kicker" id="dialog-type"></p>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-description" id="dialog-description"></p>
+
+    <div class="dialog-content">
+      <div>
+        <h3>Key Features</h3>
+        <ul id="dialog-features"></ul>
+      </div>
+      <div>
+        <h3>Technology</h3>
+        <div class="dialog-tech" id="dialog-tech"></div>
+      </div>
+    </div>
+
+    <div class="dialog-actions">
+      <a class="button button-primary" id="dialog-live" href="#" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+      <a class="button button-secondary" id="dialog-github" href="#" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home"><span>SC</span> Sakshi Chavan</a>
+      <p>Designed and built with care · <span id="current-year"></span></p>
+      <a class="back-to-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
