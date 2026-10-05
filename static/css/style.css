@@ -1094,3 +1094,32 @@ button, input, textarea { font: inherit; }
     animation: none;
   }
 }
+@media (max-width: 650px) {
+  #welcome-screen {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+
+  #welcome-screen .welcome-composition {
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+  }
+
+  #welcome-screen .welcome-lines {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+@keyframes portfolio-intro-exit {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
