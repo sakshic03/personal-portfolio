@@ -2,16 +2,19 @@ from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request, url_for
 
-from database import get_connection, initialize_database
 
-
+from database import initialize_database, get_connection
 app = Flask(__name__)
 initialize_database()
 
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    connection = get_connection()
+    projects = connection.execute("SELECT * FROM projects").fetchall()
+    connection.close()
+
+    return render_template("index.html", projects=projects)
 
 
 @app.route("/api/projects")
@@ -29,7 +32,7 @@ def get_projects():
 
 @app.route("/api/certificates")
 def get_certificates():
-    # PDFs static folder मध्ये असल्यामुळे इथे हाच folder शोधतो
+
     folder = Path(app.static_folder)
 
     if not folder.exists():

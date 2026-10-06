@@ -81,3 +81,8 @@ def initialize_database():
                     """,
                     (title, description, project_url)
                 )
+                connection.commit()
+
+
+if __name__ == "__main__":
+    initialize_database()
